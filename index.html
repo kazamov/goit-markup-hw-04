@@ -67,7 +67,9 @@
 			<section class="hero-section">
 				<div class="container hero-container">
 					<h1 class="heading-large hero-title">Effective Solutions for Your Business</h1>
-					<button class="button button--primary" type="button">Order service</button>
+					<button data-modal-open class="button button--primary" type="button">
+						Order service
+					</button>
 				</div>
 			</section>
 
@@ -171,5 +173,13 @@
 				</p>
 			</div>
 		</footer>
+
+		<div data-modal class="backdrop is-hidden">
+			<div role="dialog" aria-modal="true" class="modal">
+				<button data-modal-close class="modal-btn" type="button">Close</button>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/modal.js"></script>
 	</body>
 </html>
