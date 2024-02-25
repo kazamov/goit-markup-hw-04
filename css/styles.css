@@ -289,9 +289,19 @@ img {
 	gap: 24px;
 }
 
+.advantages-list__item {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.advantages-list__item-icon-container {
+	padding: 24px 100px;
+	background-color: var(--light-color);
+}
+
 .advantages-list__item-heading {
 	color: var(--dark-color);
-	margin-bottom: 8px;
 }
 
 .team-card__text {
@@ -352,6 +362,24 @@ img {
 	text-align: center;
 }
 
+.customers-heading {
+	text-align: center;
+	margin-bottom: 72px;
+}
+
+.customers-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 72px;
+}
+
+.customer-item {
+	padding: 16px 32px;
+	border: 1px solid var(--subtle-text-color);
+	border-radius: 4px;
+}
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -399,9 +427,12 @@ img {
 	top: 24px;
 	right: 24px;
 	padding: 0;
-	border: none;
-	background-color: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	background-color: var(--accent-color);
 	cursor: pointer;
+	width: 24px;
+	height: 24px;
 }
 
 /*#endregion Studio Page */
