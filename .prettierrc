@@ -1,0 +1,9 @@
+{
+	"singleQuote": true,
+	"endOfLine": "lf",
+	"htmlWhitespaceSensitivity": "css",
+	"embeddedLanguageFormatting": "auto",
+	"useTabs": true,
+	"tabWidth": 2,
+	"printWidth": 100
+}

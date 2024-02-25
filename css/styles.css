@@ -1,0 +1,393 @@
+:root {
+	--primary-brand-color: #4d5ae5;
+	--pressed-state-color: #404bbf;
+	--dark-color: #2e2f42;
+	--success-color: #31d0aa;
+	--text-color: #434455;
+	--subtle-text-color: #8e8f99;
+	--accent-color: #e7e9fc;
+	--light-color: #f4f4fd;
+	--modal-overlay-color: rgba(46, 47, 66, 0.4);
+	--hero-background-color: rgba(46, 47, 66, 0.7);
+	--white-color: #ffffff;
+	--modal-background-color: #fcfcfc;
+
+	--common-section-padding: 120px;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+/*#region Misc */
+
+.container {
+	max-width: 1158px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section {
+	padding-top: var(--common-section-padding);
+	padding-bottom: var(--common-section-padding);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*#endregion Misc */
+
+/*#region Typography */
+
+.heading-large {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07143;
+	letter-spacing: 0.02em;
+}
+
+.heading-medium {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11112;
+	letter-spacing: 0.02em;
+}
+
+.heading-small {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+}
+
+.body {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+/*#endregion Typography */
+
+/*#region Button */
+
+.button {
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+}
+
+.button.button--primary {
+	border: none;
+	background-color: var(--primary-brand-color);
+	box-shadow: 0px 4px 4px 0px #00000026;
+	color: var(--white-color);
+	padding: 16px 32px;
+}
+
+.button.button--primary:focus,
+.button.button--primary:hover {
+	background-color: var(--pressed-state-color);
+}
+
+.button.button--outlined {
+	padding: 12px 24px;
+	background-color: var(--light-color);
+	border: 1px solid var(--accent-color);
+	color: var(--primary-brand-color);
+	box-shadow: none;
+}
+
+.button.button--outlined:focus,
+.button.button--outlined:hover {
+	background-color: var(--pressed-state-color);
+	border: 1px solid var(--pressed-state-color);
+	box-shadow: 0px 2px 2px 0px #0000001f, 0px 2px 1px 0px #00000014, 0px 3px 1px 0px #0000001a;
+	color: var(--white-color);
+}
+
+/*#endregion Button */
+
+/*#region Header */
+
+.header {
+	border-bottom: 1px solid var(--accent-color);
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*#endregion Header */
+
+/*#region Logo */
+
+.logo {
+	font-family: 'Raleway';
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 1.16667;
+	color: var(--dark-color);
+	text-decoration: none;
+	letter-spacing: 0.03em;
+}
+
+.logo--light {
+	color: var(--light-color);
+}
+
+.logo__web {
+	color: var(--primary-brand-color);
+}
+
+/*#endregion Logo */
+
+/*#region Navigation */
+
+.navigation {
+	display: flex;
+	align-items: center;
+	gap: 76px;
+}
+
+.navigation-menu {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.navigation-menu__item-link {
+	display: block;
+	padding: 24px 0;
+	color: var(--dark-color);
+	line-height: 1.5;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+}
+
+.navigation-menu__item-link:hover {
+	color: var(--pressed-state-color);
+}
+
+.address-list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.address-list__item-link {
+	color: var(--text-color);
+	font-style: normal;
+	text-decoration: none;
+	padding: 24px 0;
+	display: block;
+}
+
+.address-list__item-link:focus,
+.address-list__item-link:hover {
+	color: var(--pressed-state-color);
+}
+
+/*#endregion Navigation */
+
+/*#region Footer */
+
+.footer {
+	background-color: var(--dark-color);
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-text {
+	color: var(--light-color);
+	max-width: 264px;
+}
+
+.footer-container .logo {
+	margin-bottom: 16px;
+}
+
+/*#endregion Footer */
+
+/*#region Studio Page */
+
+.hero-section {
+	background-color: var(--dark-color);
+	padding-top: 188px;
+	padding-bottom: 188px;
+}
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-title {
+	color: var(--white-color);
+	max-width: 496px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+
+.advantages-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.advantages-list__item-heading {
+	color: var(--dark-color);
+	margin-bottom: 8px;
+}
+
+.team-card__text {
+	color: var(--dark-color);
+}
+
+.portfolio-section {
+	padding-bottom: var(--common-section-padding);
+}
+
+.portfolio-container {
+}
+
+.portfolio-list {
+	display: flex;
+	gap: 24px;
+}
+
+.portfolio-heading {
+	margin-bottom: 72px;
+	text-align: center;
+}
+
+.portfolio-heading,
+.team-heading {
+	color: var(--dark-color);
+}
+
+.team-section {
+	background-color: var(--light-color);
+}
+
+.team-container {
+}
+
+.team-heading {
+	margin-bottom: 72px;
+	text-align: center;
+}
+
+.team-cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.team-card {
+	background-color: var(--white-color);
+	box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229, 0px 1px 6px 0px #2e2f4214;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.team-card__content {
+	padding: 32px 16px;
+}
+
+.team-card__text {
+	margin-bottom: 8px;
+	text-align: center;
+}
+
+.team-card__text + .body {
+	text-align: center;
+}
+
+/*#endregion Studio Page */
+
+/*#region Portfolio Page */
+
+.portfolio-page-section {
+	padding-top: 96px;
+	padding-bottom: var(--common-section-padding);
+}
+
+.filters {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 72px;
+}
+
+.project-cards {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
+}
+
+.project-card__link {
+	color: var(--dark-color);
+	text-decoration: none;
+}
+
+.project-card__content {
+	padding: 32px 16px;
+	border: 1px solid var(--accent-color);
+	border-top: none;
+}
+
+.project-card__heading {
+	color: var(--dark-color);
+	margin-bottom: 8px;
+}
+
+/*#endregion Portfolio Page */
