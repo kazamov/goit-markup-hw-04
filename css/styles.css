@@ -551,6 +551,7 @@ img {
 		color var(--transition-duration) var(--transition-timing-function);
 }
 
+.modal-btn:focus,
 .modal-btn:hover {
 	color: var(--white-color);
 	border-color: var(--pressed-state-color);

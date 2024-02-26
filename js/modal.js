@@ -13,6 +13,14 @@
 		}
 	});
 
+	refs.modal.addEventListener('transitionend', () => {
+		if (refs.modal.classList.contains('is-hidden')) {
+			refs.openModalBtn.focus();
+		} else {
+			refs.closeModalBtn.focus();
+		}
+	});
+
 	function toggleModal() {
 		refs.modal.classList.toggle('is-hidden');
 	}
